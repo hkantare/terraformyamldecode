@@ -1,0 +1,18 @@
+application_insights:
+  application_type: other
+  retention_in_days: 30
+  daily_data_cap_in_gb: 20
+  daily_data_cap_notifications_disabled: true
+  logs:
+  # Optional fields
+   - "AppMetrics"
+   - "AppAvailabilityResults"
+   - "AppEvents"
+   - "AppDependencies"
+   - "AppBrowserTimings"
+   - "AppExceptions"
+   - "AppExceptions"
+   - "AppPerformanceCounters"
+   - "AppRequests"
+   - "AppSystemEvents"
+   - "AppTraces"
