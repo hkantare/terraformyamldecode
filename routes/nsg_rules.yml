@@ -1,0 +1,21 @@
+aks:
+  rdp:
+    name: rdp
+    priority: 80
+    direction: Inbound
+    access: Allow
+    protocol: Tcp
+    source_port_range: "*"
+    destination_port_range: 3399
+    source_address_prefix: VirtualNetwork
+    destination_address_prefix: "*"
+  ssh:
+    name: ssh
+    priority: 70
+    direction: Inbound
+    access: Allow
+    protocol: Tcp
+    source_port_range: "*"
+    destination_port_range: 24
+    source_address_prefix: VirtualNetwork
+    destination_address_prefix: "*"
